@@ -5,8 +5,8 @@ in its most classic form:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Paige Swango.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -85,6 +85,19 @@ def run_test_count_negatives():
     # -------------------------------------------------------------------------
     # TODO 2 (continued):  Add your 2 ADDITIONAL tests here:
     # -------------------------------------------------------------------------
+    # Test 6:
+    expected = 0
+    actual = count_negatives([3,7,5,-3])
+    print()
+    print('Test 6 expected:', expected)
+    print('       actual:  ', actual)
+
+    # Test 7:
+    expected = 0
+    actual = count_negatives([5,9,11,-5])
+    print()
+    print('Test 7 expected:', expected)
+    print('       actual:  ', actual)
 
 
 def count_negatives(seq):
@@ -187,6 +200,21 @@ def run_test_count_short_ones():
     # -------------------------------------------------------------------------
     # TODO 4 (continued):  Add your 2 ADDITIONAL test(s) here:
     # -------------------------------------------------------------------------
+    # Test 8:
+    expected = 5
+    seq = [[], [], [], [], [] ]
+    actual = count_short_ones(seq)
+    print()
+    print('Test 8 expected:', expected)
+    print('       actual:  ', actual)
+
+    # Test 9:
+    expected = 2
+    seq = [[], [] ]
+    actual = count_short_ones(seq)
+    print()
+    print('Test 9 expected:', expected)
+    print('       actual:  ', actual)
 
 
 def count_short_ones(seq_of_lists):
